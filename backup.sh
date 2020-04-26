@@ -61,7 +61,7 @@ do
 
     printf "\n"
     printf "Enrypting\n"
-    openssl aes-256-cbc -e -in ${backup} -out ${backup}_enc -k "superSafeHolyMolyKey" 1>/dev/null 2>&1
+    openssl aes-256-cbc -e -in ${backup} -out ${backup}_enc -k "safeKeyTrustMe" 1>/dev/null 2>&1
     
     # remove unencrypted file
     rm ${backup}
@@ -89,7 +89,7 @@ do
     then
         printf "OK\n"
     else
-        printf "NOK\n"
+        printf "Not OK\n"
     fi
 
     printf "Signature                               ${backup}_signature\n"
