@@ -1,5 +1,4 @@
 #!/bin/bash
-# first line is called shebang, used to tell which 
 # author: Dominik Duric
 # change permissions to execute `chmod 755 `
 
